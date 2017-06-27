@@ -63,6 +63,7 @@ default['snmp']['all_disk_min'] = 100    # 100K
 default['snmp']['disks'] = []
 default['snmp']['load_average'] = []
 default['snmp']['extend_scripts'] = {}
+default['snmp']['enable_agentx'] = false
 
 # Debian default file options
 default['snmp']['snmpd']['mibdirs'] = '/usr/share/snmp/mibs'

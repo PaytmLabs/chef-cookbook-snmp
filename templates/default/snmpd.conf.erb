@@ -162,7 +162,7 @@ trapsink <%= trapsink %>
   <% end %>
 <% end %>
 
-<% if node['snmp']['snmpd']['trapd_run'] == "yes" %>
+<% if node['snmp']['enable_agentx'] or node['snmp']['snmpd']['trapd_run'] == "yes" %>
 master agentx
 <% end %>
 
